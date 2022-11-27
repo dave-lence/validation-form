@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                   <img src="logo.svg">
+                </div>
+    
+                <div class="image">
+                    <img src="illustration.svg">
+                </div>
+
+                <div class="text">
+                    <p>Start for free and get amazing offers today</p>
+                </div>
+            </div>
+                <form id="formdata">
+                    <h1 class="title">Get Started</h1>
+                    <p class="have-acct">Already have an account? <a href="#"><span class="login">Log in</span></a></p>
+                    <div class="btn">
+                        <div class="btn-1">
+                            <img src="https://img.icons8.com/color/30/000000/google-logo.png"/>
+                            <p>Sign Up</p>
+                        </div>
+
+                        <div class="btn-2">
+                            <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"/>
+                            <p>Sign Up</p>
+                        </div>
+
+                    </div>
+
+                    <div class="or">Or</div>
+
+                    <!---input for name-->
+                    <div>
+                        <label for="username">User Name</label>
+                        <i class="fas fa-user"></i>
+
+                        <input 
+                           type="text"
+                           placeholder="User name"
+                           id="username"
+                           name="username" 
+                           />
+
+                         <i class="fas fa-exclamation-circle failure-icon"></i>
+                         <i class="fas fa-check-circle success-icon"></i> 
+                         
+                         <div class="error-msg" id="error-msg"></div>
+                    </div>
+
+                    <!---input for email-->
+                    <div>
+                        <label for="email">Email</label>
+                        <i class="far fa-envelope"></i>
+
+                        <input 
+                           type="email"
+                           placeholder="john@example.com"
+                           id="email"
+                           name="email" 
+                           />
+
+                         <i class="fas fa-exclamation-circle failure-icon"></i>
+                         <i class="fas fa-check-circle success-icon"></i> 
+                         
+                         <div class="error-msg" id="error-msg"></div>
+                    </div>
+
+                    <!---input for password-->
+                    <div>
+                        <label for="pwd">Create Password</label>
+                        <i class="fas fa-lock"></i>
+
+                        <input 
+                           type="password"
+                           placeholder="**********"
+                           maxlength="10"
+                           id="pwd"
+                           name="pwd" 
+                           />
+
+                         <i class="fas fa-exclamation-circle failure-icon"></i>
+                         <i class="fas fa-check-circle success-icon"></i> 
+                         
+                         <div class="error-msg" id="error-msg"></div>
+                    </div>
+
+                    <!---submit btn-->
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
